@@ -25,7 +25,7 @@
 -export_type([should_retry/0, retry_fun/0]).
 
 -type should_retry() :: {retry | error, #aws_request{}}.
--type retry_fun() :: fun((#aws_request{}, non_neg_integer()) -> should_retry()).
+-type retry_fun() :: fun((#aws_request{}) -> should_retry()).
 
 %% Internal impl api
 -export([request/3]).
