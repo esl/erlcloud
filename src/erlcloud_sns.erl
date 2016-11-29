@@ -101,7 +101,7 @@
 -export_type([sns_acl/0, sns_endpoint_attribute/0,
               sns_message/0, sns_application/0, sns_endpoint/0]).
 
--spec parameter() :: binary() | string().
+-type parameter() :: binary() | string().
 
 -spec add_permission/3 :: (parameter(), parameter(), sns_acl()) -> ok.
 
