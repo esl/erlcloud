@@ -1369,7 +1369,7 @@ batch_write_item(RequestItems, Opts, Config) ->
 %%% CreateTable
 %%%------------------------------------------------------------------------------
 
--type local_secondary_index_def() :: {index_name(), range_key_name(), projection()}.
+-type local_secondary_index_def() :: {index_name(), key_schema(), projection()}.
 -type local_secondary_indexes() :: maybe_list(local_secondary_index_def()).
 -type global_secondary_indexes() :: maybe_list(global_secondary_index_def()).
 
